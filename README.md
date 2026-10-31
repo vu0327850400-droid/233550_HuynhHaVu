@@ -93,3 +93,7 @@ Khi triển khai trên đám mây, build lại với `VITE_API_URL` là địa c
 ### Triển khai backend API trên Render
 URL backend API: https://api-233550.onrender.com
 Kiểm tra: https://api-233550.onrender.com/health
+
+
+### Triển khai frontend trên Render
+URL frontend: https://web-233550.onrender.com
