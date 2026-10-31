@@ -88,3 +88,8 @@ docker run -d --name frontend-test -p 3000:80 havu2005/frontend
 Mở: http://localhost:3000
 
 Khi triển khai trên đám mây, build lại với `VITE_API_URL` là địa chỉ backend công khai.
+
+
+### Triển khai backend API trên Render
+URL backend API: https://api-233550.onrender.com
+Kiểm tra: https://api-233550.onrender.com/health
