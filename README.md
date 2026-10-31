@@ -72,3 +72,19 @@ Kiểm tra:
 - http://localhost:5000/api/devices
 
 Lưu ý: file `.env` không được đưa vào image, thông tin kết nối MongoDB được truyền khi chạy container.
+
+
+### Chạy frontend bằng Docker
+Image trên Docker Hub: https://hub.docker.com/r/havu2005/frontend
+
+Build image (địa chỉ backend được gắn vào lúc build):
+```
+docker build -t havu2005/frontend --build-arg VITE_API_URL=http://localhost:5000 ./frontend
+```
+Chạy container (backend cần đang chạy ở cổng 5000):
+```
+docker run -d --name frontend-test -p 3000:80 havu2005/frontend
+```
+Mở: http://localhost:3000
+
+Khi triển khai trên đám mây, build lại với `VITE_API_URL` là địa chỉ backend công khai.
